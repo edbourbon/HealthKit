@@ -1342,6 +1342,7 @@ static NSString *const HKPluginKeyUUID = @"UUID";
                                                                           } else {
                                                                               entry[HKPluginKeyMetadata] = sample.metadata;
                                                                           }
+                                                                          entry[@"model"] = sample.device.model;
 
                                                                           // case-specific indices
                                                                           if ([sample isKindOfClass:[HKCategorySample class]]) {
